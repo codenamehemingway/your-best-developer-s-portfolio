@@ -46,35 +46,63 @@ header h1 {
   margin: 0;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
-header a {
-  text-decoration: none;
-  color: #787677;
-}
-header nav {
-  margin: 7px 0;
-}
-header nav ul {
+nav {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  list-style: none;
+  min-height: 8vh;
+  background: #ffbca3;
+  background: -webkit-linear-gradient(
+    to bottom right,
+    #ffbca3 0%,
+    #b05052 50%,
+    #eda287 100%
+  );
+  background: -moz-linear-gradient(
+    to bottom right,
+    #ffbca3 0%,
+    #b05052 50%,
+    #eda287 100%
+  );
+  background: linear-gradient(
+    to bottom right,
+    #ffbca3 0%,
+    #b05052 50%,
+    #eda287 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: 100%;
+  position: fixed;
 }
-header nav ul li a {
-  padding: 10px 15px;
-  font-weight: lighter;
-  font-size: 1.55vw;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  color: #b05050;
+.burger {
+  display: none;
 }
-header nav ul li a:hover {
-  background: -webkit-linear-gradient(#b05050, #ffb57c);
-  color: #000;
-  border-radius: 15px;
-  text-shadow: none;
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: -w;
+  margin: 5px;
+  transition: all 0.4s ease;
 }
 body {
-  /* background-color: black; */
+  background-color: grey;
+  display: block;
+}
+#hero {
+  background-image: url(".assets/images/saguaro.jpg");
+  background-repeat: no-repeat;
+  background-position: right;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  background-attachment: fixed;
+  background-position: 80%;
+}
+
+.about {
+  border: green;
 }
 .work {
   background: #ffbca3;
@@ -101,4 +129,5 @@ body {
   margin: 10px;
   padding: 10px;
   border: 10px;
+  display: flex;
 }
