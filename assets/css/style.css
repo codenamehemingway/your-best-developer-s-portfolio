@@ -22,7 +22,25 @@ header {
 header h1 {
   font-weight: bold;
   font-size: 36px;
-  background: -webkit-linear-gradient(#b05050, #ffb57c);
+  background: #ffbca3;
+  background: -webkit-linear-gradient(
+    to bottom right,
+    #ffbca3 0%,
+    #b05052 50%,
+    #eda287 100%
+  );
+  background: -moz-linear-gradient(
+    to bottom right,
+    #ffbca3 0%,
+    #b05052 50%,
+    #eda287 100%
+  );
+  background: linear-gradient(
+    to bottom right,
+    #ffbca3 0%,
+    #b05052 50%,
+    #eda287 100%
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin: 0;
@@ -47,10 +65,40 @@ header nav ul li a {
   font-weight: lighter;
   font-size: 1.55vw;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  color: #b05050;
 }
 header nav ul li a:hover {
   background: -webkit-linear-gradient(#b05050, #ffb57c);
   color: #000;
   border-radius: 15px;
   text-shadow: none;
+}
+body {
+  /* background-color: black; */
+}
+.work {
+  background: #ffbca3;
+  background: -webkit-linear-gradient(
+    to bottom right,
+    #ffbca3 0%,
+    #b05052 50%,
+    #eda287 100%
+  );
+  background: -moz-linear-gradient(
+    to bottom right,
+    #ffbca3 0%,
+    #b05052 50%,
+    #eda287 100%
+  );
+  background: linear-gradient(
+    to bottom right,
+    #ffbca3 0%,
+    #b05052 50%,
+    #eda287 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 10px;
+  padding: 10px;
+  border: 10px;
 }
