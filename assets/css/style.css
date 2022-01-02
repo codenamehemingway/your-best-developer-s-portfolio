@@ -3,16 +3,20 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  color: #39a6b2;
+  font-family: Arial, Helvetica, sans-serif;
+}
 header {
   padding: 20px 35px;
-  background-color: rgba(0, 0, 0, 0);
-  color: #0000;
+  background-color: #39a6b2;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+  background-image: url("../images/saguaro.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -22,112 +26,98 @@ header {
 header h1 {
   font-weight: bold;
   font-size: 36px;
-  background: #ffbca3;
-  background: -webkit-linear-gradient(
-    to bottom right,
-    #ffbca3 0%,
-    #b05052 50%,
-    #eda287 100%
-  );
-  background: -moz-linear-gradient(
-    to bottom right,
-    #ffbca3 0%,
-    #b05052 50%,
-    #eda287 100%
-  );
-  background: linear-gradient(
-    to bottom right,
-    #ffbca3 0%,
-    #b05052 50%,
-    #eda287 100%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #da8a68;
   margin: 0;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
-nav {
+header h2 {
+  font-weight: normal;
+  font-size: 24px;
+}
+header a {
+  text-decoration: none;
+  color: #da8a68;
+}
+header nav {
+  margin: 7px 0;
+}
+header nav ul {
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: space-between;
   align-items: center;
-  min-height: 8vh;
-  background: #ffbca3;
-  background: -webkit-linear-gradient(
-    to bottom right,
-    #ffbca3 0%,
-    #b05052 50%,
-    #eda287 100%
-  );
-  background: -moz-linear-gradient(
-    to bottom right,
-    #ffbca3 0%,
-    #b05052 50%,
-    #eda287 100%
-  );
-  background: linear-gradient(
-    to bottom right,
-    #ffbca3 0%,
-    #b05052 50%,
-    #eda287 100%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  width: 100%;
-  position: fixed;
+  list-style: none;
 }
-.burger {
-  display: none;
+header nav ul li a {
+  padding: 10px 15px;
+  font-weight: lighter;
+  font-size: 1.55vw;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
-.burger div {
-  width: 25px;
-  height: 3px;
-  background-color: -w;
-  margin: 5px;
-  transition: all 0.4s ease;
+header nav ul li a:hover {
+  background: #da8a68;
+  color: #000;
+  border-radius: 15px;
+  text-shadow: none;
 }
-body {
-  background-color: grey;
-  display: block;
+section {
+  padding: 60px;
 }
-#hero {
-  background-image: url(".assets/images/saguaro.jpg");
-  background-repeat: no-repeat;
-  background-position: right;
+/* hero style start */
+.hero {
+  background-image: url("../images/saguaro.jpg");
+  background-size: cover;
+  background-position: center;
   display: flex;
-  justify-content: center;
+  justify-content: left;
   flex-wrap: wrap;
   align-items: flex-start;
   background-attachment: fixed;
   background-position: 80%;
 }
 
-.about {
-  border: green;
+.hero-cta {
+  width: 35%;
+  text-align: right;
+  margin: 3.5%;
+  color: #da8a68;
+  font-size: 18px;
+  line-height: 1.2;
 }
-.work {
-  background: #ffbca3;
-  background: -webkit-linear-gradient(
-    to bottom right,
-    #ffbca3 0%,
-    #b05052 50%,
-    #eda287 100%
-  );
-  background: -moz-linear-gradient(
-    to bottom right,
-    #ffbca3 0%,
-    #b05052 50%,
-    #eda287 100%
-  );
-  background: linear-gradient(
-    to bottom right,
-    #ffbca3 0%,
-    #b05052 50%,
-    #eda287 100%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin: 10px;
-  padding: 10px;
-  border: 10px;
-  display: flex;
+.hero-cta h2 {
+  font-style: italic;
+  font-size: 55px;
+  color: #da8a68;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+/* Hero Style End */
+.intro {
+  background-color: #000;
+}
+.intro p {
+  line-height: 1.7;
+  color: silver;
+  background-color: #000;
+  width: 80%;
+  font-size: 20px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 48px;
+  color: silver;
+  border-bottom: 3px solid;
+  padding-bottom: 20px;
+  text-align: center;
+  margin: 0 auto 35px auto;
+  width: 50%;
+}
+
+.primary-border {
+  border-color: #da8a68;
+}
+
+.secondary-border {
+  border-color: #da8a68;
 }
