@@ -131,6 +131,7 @@ section {
   flex: 1;
   border: #da8a68;
   border-style: double;
+  border-radius: 25px;
 }
 .projects {
   width: 100%;
@@ -141,6 +142,10 @@ section {
 }
 .project img {
   width: 100%;
+  border-radius: 25px;
+}
+.project:hover img {
+  opacity: 0.3;
 }
 
 .project-info {
@@ -157,4 +162,155 @@ section {
   font-size: 22px;
   margin-bottom: 15px;
   color: silver;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+.contact {
+  background: #000;
+}
+
+.contact h2 {
+  color: #da8a68;
+}
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.contact-info > * {
+  flex: 1;
+  margin: 15px;
+}
+.contact-info iframe {
+  height: 400px;
+}
+
+.contact-info div {
+  color: silver;
+}
+
+.contact-info h3 {
+  color: #da8a68;
+  font-size: 32px;
+}
+
+.contact-info p,
+.contact-info address {
+  margin: 20px 0;
+  line-height: 1.5;
+  font-size: 16px;
+  font-style: normal;
+}
+
+.contact-info a {
+  color: #da8a68;
+}
+.flex-row {
+  display: flex;
+}
+.contact-form input,
+.contact-form textarea {
+  border: 1px solid #da8a68;
+  display: block;
+  padding: 7px 15px;
+  font-size: 16px;
+  color: #024e76;
+  width: 100%;
+  margin-bottom: 15px;
+  margin-top: 5px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+.contact-form input:focus,
+.contact-form textarea:focus {
+  background-color: rgba(255, 255, 255, 1);
+  outline: none;
+}
+.contact-form button {
+  width: 100%;
+  border: none;
+  background: #000;
+  color: #da8a68;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 16px;
+  border-radius: 10px;
+}
+.contact-form button:hover {
+  color: rgba(5, 5, 5, 0);
+  background: #da8a68;
+}
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+  header {
+    padding-bottom: 0;
+    justify-content: center;
+    position: relative;
+  }
+
+  header h1 {
+    width: 100%;
+    text-align: center;
+  }
+
+  header nav ul {
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  header nav ul li a {
+    font-size: 20px;
+  }
+
+  footer h2,
+  footer div {
+    text-align: center;
+    width: 100%;
+  }
+  .hero-cta {
+    width: 100%;
+  }
+
+  .hero-cta {
+    text-align: center;
+  }
+  .section-title {
+    width: 80%;
+  }
+
+  .project {
+    flex: 0 70%;
+  }
+}
+@media screen and (max-width: 768px) {
+  section {
+    padding: 30px 15px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .section-title {
+    width: 95%;
+  }
+  .intro p {
+    width: 100%;
+  }
+  .project {
+    flex: 0 100%;
+  }
+  .contact-info {
+    text-align: center;
+  }
+  .contact-info > * {
+    flex: 0 100%;
+  }
+  .contact-form {
+    order: 3;
+  }
 }

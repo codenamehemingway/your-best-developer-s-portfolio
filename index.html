@@ -19,15 +19,16 @@
           <!-- unordered list element -->
           <li>
             <!-- Anchor element -->
-            <a href="#About-me" ; title="About">About</a>
+            <a href="#about-me" ; title="About">About</a>
           </li>
           <li>
-            <a href="#mywork" ; title="My Work">My Work</a>
+            <a href="#my_work" ; title="My Work">My Work</a>
           </li>
           <li>
             <a href="#reach-out" ; title="Contact">Contact</a>
           </li>
           <li>
+            <!--resume link will go to a separate window with pdf-->
             <a href="#resume" ; title="Resume">Resume</a>
           </li>
         </ul>
@@ -104,5 +105,38 @@
         </article>
       </div>
     </section>
+    <!-- Contact info -->
+    <section id="reach-out" class="contact">
+      <h2 class="section-title secondary-border">Let's talk.</h2>
+      <div class="contact-info">
+        <div>
+          <p>
+            Get in touch via the form on the right, </br> or by emailing <a href="mailto://jared.hemingway.jh@gmail.com"> jared.hemingway.jh@gmail.com</a>
+          </p>
+
+          <address>
+            Tucson, AZ <br />
+            85710 <br />
+            P: <a href="tel:520.878.3817">520.878.3817</a><br />
+            E: <a href="mailto://jared.hemingway.jh@gmail.com">jared.hemingway.jh@gmail.com</a>
+          </address>
+        </div>
+
+        <div class="contact-form">
+          <form>
+            <label for="contact-name">Your Name</label>
+            <input type="text" id="contact-name" placeholder="Your Name" />
+
+            <label for="contact-email">Email Address</label>
+            <input type="text" id="contact-email" placeholder="Email" />
+
+            <label for="contact-message">Message</label>
+            <textarea id="contact-message" placeholder="Message"></textarea>
+
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </section>  
   </body>
 </html>
